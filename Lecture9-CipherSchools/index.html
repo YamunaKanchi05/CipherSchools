@@ -1,0 +1,57 @@
+<!-- An event is any kind of user interaction
+ex) clicking, hovering, entering some key -->
+<!-- DOM traversal
+DOM (Document Object Model) 
+traversal is a fundamental technique in web development used to navigate and manipulate the elements 
+of an HTML document. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chaset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test.css" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <!-- <main> -->
+      <!-- <h1 onclick = "innerText = `This is after click`">My Page Title</h1> -->
+      <!-- <h1 onclick = "changeText()">My Page Title</h1>
+      <p>Nice caption goes here</p>
+
+      <article class="first_article">
+        <h2>List of amazing fruits</h2>
+        <p>Must eat fruits</p>
+        
+        <div class="wrapper-1">
+          <ul class="apple-list">
+            <li class="apple">Apples</li>
+            <li class="orange">Orange</li>
+            <li class="avocado">Avacado</li>
+            <li class="grapes">
+              Grapes
+            <ul>
+                <li class="type-1">Moon drops</li>
+                <li>Sultana</li>
+                <li>Concord</li>
+                <li>Crimson Seedless</li>
+            </ul>
+          </li>
+          <li class="banana">Bananas</li>
+        </ul>
+        </div>
+        </article>
+       -->
+        <button class="btn-1" onclick = "showContent()" >The time is:</button>
+        <p class = "content"></p>
+        <input type = "text" onchange = "upperCase()">
+        <!-- <div class ="demo" onmouseover="mover(this)" onmouseout="mout(this)" style = "background-color: red;height:100px;width:100px;"> -->
+        <div class ="demo" onmousedown="mdown(this)" onmouseup="mUp(this)" style = "background-color: red;height:100px;width:100px;">
+
+        </div>
+    </main>
+    <script src = "index.js"></script>
+  </body>
+  
+
+</html>
