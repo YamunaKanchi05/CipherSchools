@@ -1,0 +1,64 @@
+object is a unique entity which contain properties and methods
+object can be created using 3 ways
+1) Object literal
+2) Object constructor
+3) By using Object.create() method
+classes:Classes are the blue print of a classes
+Js dont have class because it is a prototype based langauge
+meanse no classes it defines behavior in constructor function and reuse it using prototype
+Abstraction:It means displaying only the essential infromation and hiding th edetails
+Encapsulation:The process of wrapping props and functions within a single unit is called encapsualtion
+Inheritance: js objects inherit objects that is certains props and methods of an object can be reused by other objects
+Poymorphism:
+class example
+class Animal {
+  makeSound() {
+    console.log('Some generic sound');
+  }
+}
+
+class Dog extends Animal {
+  makeSound() {
+    console.log('Woof!');
+  }
+}
+
+class Cat extends Animal {
+  makeSound() {
+    console.log('Meow!');
+  }
+}
+
+const animals = [new Dog(), new Cat(), new Animal()];
+
+animals.forEach(animal => animal.makeSound());
+// Output:
+// Woof!
+// Meow!
+// Some generic sound
+function example
+function printSound(animal) {
+  animal.makeSound();
+}
+
+const dog = {
+  makeSound: function() {
+    console.log('Woof!');
+  }
+};
+
+const cat = {
+  makeSound: function() {
+    console.log('Meow!');
+  }
+};
+
+const bird = {
+  makeSound: function() {
+    console.log('Chirp!');
+  }
+};
+
+printSound(dog); // Output: Woof!
+printSound(cat); // Output: Meow!
+printSound(bird); // Output: Chirp!
